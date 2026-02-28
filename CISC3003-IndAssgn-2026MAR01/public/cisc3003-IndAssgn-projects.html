@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Kris's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="cisc3003-IndAssgn.html">Kris's Portfolio</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="cisc3003-IndAssgn.html">Home</a></li>
+                    <li><a href="cisc3003-IndAssgn-projects.html" class="active">Projects</a></li>
+                    <li><a href="cisc3003-IndAssgn-summary.html">Summary</a></li>
+                    <li><a href="cisc3003-IndAssgn-qualification.html">Qualifications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Here are two major projects I've worked on, with detailed descriptions and technologies used.</p>
+
+            <!-- Project 1: Ctrip Flight Data Scraper -->
+            <section class="card">
+                <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
+                    <img src="../images/project1.jpg" alt="Flight scraper screenshot" style="width: 300px; border-radius: 8px;">
+                    <div>
+                        <h2>Ctrip Flight Data Scraper</h2>
+                        <p><strong>Timeline:</strong> Jan 2025 - Apr 2025</p>
+                        <p><strong>Tech Stack:</strong> Python, Selenium, BeautifulSoup, Pandas, GitHub Actions</p>
+                        <p><strong>Description:</strong> This project automates the collection of flight data from Ctrip (a major travel platform) for routes across China. The scraper extracts detailed information including departure/arrival times, ticket prices, flight numbers, origin/destination airports, and connection details (if any). Data is stored in CSV format and regularly updated via GitHub Actions to ensure freshness.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>Handles dynamic content loading with Selenium.</li>
+                            <li>Implements anti-blocking techniques (random delays, user-agent rotation).</li>
+                            <li>Data cleaning and normalization using Pandas.</li>
+                            <li>Scheduled weekly updates via GitHub Actions, with data published in the repository.</li>
+                            <li>Over 10,000 flight records collected and maintained.</li>
+                        </ul>
+                        <a href="https://github.com/wzxlll/-" class="btn" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project 2: Xiaohongshu Tag Scraper & Recommendation Agent -->
+            <section class="card">
+                <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
+                    <img src="../images/project2.jpg" alt="Xiaohongshu scraper screenshot" style="width: 300px; border-radius: 8px;">
+                    <div>
+                        <h2>Xiaohongshu Tag Scraper & Recommendation Agent</h2>
+                        <p><strong>Timeline:</strong> May 2025 - Aug 2025</p>
+                        <p><strong>Tech Stack:</strong> Python, Selenium, Scrapy, Pandas, scikit-learn, Transformers, Flask</p>
+                        <p><strong>Description:</strong> This project focuses on collecting and analyzing hashtag data from Xiaohongshu (Little Red Book), a popular social platform. The scraper gathers tags (hashtags) used in posts along with their associated like, comment, and bookmark counts. After cleaning and preprocessing, the data is used to train a machine learning model that recommends optimal tags for new content based on the post's theme or keywords, aiming to maximize engagement.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>Scrapes tag metadata from public Xiaohongshu posts using a combination of Selenium and Scrapy, handling infinite scroll and login-free access.</li>
+                            <li>Collects over 50,000 unique tags with engagement metrics over a three-month period.</li>
+                            <li>Performs text preprocessing (tokenization, stopword removal) and feature extraction (TF-IDF, word embeddings).</li>
+                            <li>Trains a recommendation model using a hybrid approach: content-based filtering (using tag co-occurrence) and a neural network that maps post themes to high-engagement tags.</li>
+                            <li>Deploys a simple Flask API where users can input a short description or keywords and receive a list of recommended tags with predicted engagement scores.</li>
+                        </ul>
+                        <a href="https://github.com/wzxlll33/-url-n-tag-" class="btn" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kris (dc228114). All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
